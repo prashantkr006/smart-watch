@@ -6,6 +6,7 @@ import AppBar from '@mui/material/AppBar';
 import ShoppingCartTwoToneIcon from '@mui/icons-material/ShoppingCartTwoTone';
 import ForumTwoToneIcon from '@mui/icons-material/ForumTwoTone';
 import { ReactComponent as LandPageImg } from '../../Constants/assets/amico.svg';
+import { Link } from 'react-router-dom';
 
 export default function Home() {
 	return (
@@ -21,11 +22,22 @@ export default function Home() {
 			>
 				<Logo id="logo" />
 				<div className="navBtns">
-					<Btn variant={'outlined'} title="Home" onClick="#" />
-					<Btn variant={'outlined'} title="Features" />
-					<Btn variant={'outlined'} title="Price" />
-					<Btn variant={'outlined'} title="Shop" />
-					<Btn variant={'outlined'} title="Contact Us" />
+					<Link to="/">
+						<Btn variant={'outlined'} title="Home" />
+					</Link>
+
+					<Link to="/features">
+						<Btn variant={'outlined'} title="Features" />
+					</Link>
+					<Link to="/price">
+						<Btn variant={'outlined'} title="price" />
+					</Link>
+					<Link to="/shop">
+						<Btn variant={'outlined'} title="shop" />
+					</Link>
+					<Link to="/contact">
+						<Btn variant={'outlined'} title="contact us" />
+					</Link>
 				</div>
 				<div className="navIcons">
 					<ShoppingCartTwoToneIcon style={{ color: '#F57416', height: '3rem' }} />
