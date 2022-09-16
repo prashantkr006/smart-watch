@@ -1,0 +1,99 @@
+.home__container {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	height: 100vh;
+	width: 100vw;
+}
+#logo {
+	grid-column: 2/3;
+	display: grid;
+	justify-content: start;
+	align-items: center;
+}
+.navBtns {
+	grid-column: 3/4;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	width: 60vw;
+}
+.navIcons {
+	grid-column: 4/5;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+.body__container {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: flex-end;
+	width: 100vw;
+	padding: 1rem;
+}
+
+.title__container {
+	width: auto;
+	height: max-content;
+}
+.pro__txt {
+	color: #177462;
+	font-size: 6.25rem;
+	line-height: 8.75rem;
+}
+.smart_watches_txt {
+	color: #f57416;
+	font-size: 4.375rem;
+	line-height: 5rem;
+}
+.smart_ppl_txt {
+	color: #000000;
+	font-size: 7.5rem;
+	line-height: 6.25rem;
+}
+
+/**RESPONSIVE CSS STYLES **/
+
+@media screen and (max-width: 1140px) {
+	.navIcons {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 1080px) {
+	.navBtns {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.body__container {
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		justify-content: center;
+		align-items: center;
+	}
+	.title__container {
+		margin-bottom: 1rem;
+		display: flex;
+		flex-direction: column;
+	}
+	.pro__txt {
+		color: #177462;
+		font-size: 7rem;
+		line-height: 6rem;
+	}
+	.smart_watches_txt {
+		color: #f57416;
+		font-size: 4rem;
+		line-height: 4rem;
+	}
+	.smart_ppl_txt {
+		color: #000000;
+		font-size: 4rem;
+		line-height: 3rem;
+	}
+}
