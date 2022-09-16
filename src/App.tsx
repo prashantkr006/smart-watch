@@ -2,8 +2,11 @@ import React from 'react';
 import './App.css';
 import { createBrowserRouter, RouterProvider, Route } from 'react-router-dom';
 import Home from './pages/home/Home';
-import Features from './pages/Features';
-import Shop from './pages/Shop';
+import Features from './pages/features/Features';
+import Shop from './pages/shop/Shop';
+import Price from './pages/price/Price';
+import Cart from './pages/cart/Cart';
+import ContactUs from './pages/contact/ContactUs';
 
 const router = createBrowserRouter([
 	{
@@ -17,6 +20,18 @@ const router = createBrowserRouter([
 	{
 		path: '/shop',
 		element: <Shop />
+	},
+	{
+		path: '/price',
+		element: <Price />
+	},
+	{
+		path: '/cart',
+		element: <Cart />
+	},
+	{
+		path: '/contact',
+		element: <ContactUs />
 	}
 ]);
 
