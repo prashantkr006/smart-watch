@@ -22,7 +22,7 @@ export default function Home() {
 			>
 				<Logo id="logo" />
 				<div className="navBtns">
-					<Link to="/">
+					<Link to="https://prashantkr006.github.io/smart-watch/">
 						<Btn variant={'outlined'} title="Home" />
 					</Link>
 
