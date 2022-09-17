@@ -4,7 +4,6 @@ import Btn from '../../components/Btn';
 import './home.css';
 import AppBar from '@mui/material/AppBar';
 import ShoppingCartTwoToneIcon from '@mui/icons-material/ShoppingCartTwoTone';
-import ForumTwoToneIcon from '@mui/icons-material/ForumTwoTone';
 import { ReactComponent as LandPageImg } from '../../Constants/assets/amico.svg';
 import { Link } from 'react-router-dom';
 
@@ -22,7 +21,7 @@ export default function Home() {
 			>
 				<Logo id="logo" />
 				<div className="navBtns">
-					<Link to="/">
+					<Link to="/smart-watch">
 						<Btn variant={'outlined'} title="Home" />
 					</Link>
 
@@ -41,7 +40,6 @@ export default function Home() {
 				</div>
 				<div className="navIcons">
 					<ShoppingCartTwoToneIcon style={{ color: '#F57416', height: '3rem' }} />
-					<ForumTwoToneIcon style={{ color: '#F57416', height: '3rem' }} />
 				</div>
 			</AppBar>
 			<div className="body__container">

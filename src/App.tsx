@@ -39,7 +39,7 @@ function App() {
 	return (
 		<div className="App">
 			<Routes>
-				<Route path="/" element={<Home />} />
+				<Route path="/smart-watch" element={<Home />} />
 				<Route path="/features" element={<Features />} />
 				<Route path="/shop" element={<Shop />} />
 				<Route path="/price" element={<Price />} />
