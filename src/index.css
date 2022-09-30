@@ -31,7 +31,10 @@ html {
 
 body {
 	font-family: 'Jaldi', 'Poppins', sans-serif;
-	background-color: pink;
+	display: flex;
+	flex: 1;
+	justify-content: center;
+	align-items: center;
 }
 
 code {

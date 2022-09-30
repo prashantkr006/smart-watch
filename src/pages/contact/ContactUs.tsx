@@ -1,46 +1,20 @@
-import { AppBar } from '@mui/material';
-import React from 'react';
-import { Link } from 'react-router-dom';
+import { Paper, TextField } from '@mui/material';
 import Btn from '../../components/Btn';
+import Nav from '../../components/Nav';
 import Logo from '../../Constants/assets/Logo';
-import ShoppingCartTwoToneIcon from '@mui/icons-material/ShoppingCartTwoTone';
-
+import './contact.css';
 export default function Contact() {
 	return (
-		<div>
-			<AppBar
-				sx={{
-					backgroundColor: 'rgba(255,255,255,0.5)',
-					display: 'grid',
-					gridTemplateColumns: '5rem 1fr 2fr 1fr 5rem',
-					alignItems: 'center'
-				}}
-				position="static"
-			>
+		<>
+			<Nav />
+			<Paper elevation={16} className="contact-container">
 				<Logo id="logo" />
-				<div className="navBtns">
-					<Link to="/smart-watch">
-						<Btn variant={'outlined'} title="Home" />
-					</Link>
-
-					<Link to="/features">
-						<Btn variant={'outlined'} title="Features" />
-					</Link>
-					<Link to="/price">
-						<Btn variant={'outlined'} title="price" />
-					</Link>
-					<Link to="/shop">
-						<Btn variant={'outlined'} title="shop" />
-					</Link>
-					<Link to="/contact">
-						<Btn variant={'outlined'} title="contact us" />
-					</Link>
-				</div>
-				<div className="navIcons">
-					<ShoppingCartTwoToneIcon style={{ color: '#F57416', height: '3rem' }} />
-				</div>
-			</AppBar>
-			<h1 style={{ color: '#000' }}>Contact Us</h1>
-		</div>
+				<TextField placeholder="Name" margin="normal" />
+				<TextField placeholder="Email" margin="normal" />
+				<TextField placeholder="Phone" margin="normal" />
+				<TextField id="outlined-multiline-static" label="Multiline" multiline rows={4} defaultValue="Default Value" margin="normal" />
+				<Btn variant={'outlined'} title="Send message" />
+			</Paper>
+		</>
 	);
 }
