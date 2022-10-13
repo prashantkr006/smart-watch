@@ -1,11 +1,13 @@
 import { AppBar } from '@mui/material';
-import React from 'react';
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import Logo from '../Constants/assets/Logo';
 import Btn from './Btn';
 import ShoppingCartTwoToneIcon from '@mui/icons-material/ShoppingCartTwoTone';
-
+import MenuIcon from '@mui/icons-material/Menu';
 export default function Nav() {
+	const [showMediaIcons, setShowMediaIcons] = useState(false);
+
 	return (
 		<div>
 			<AppBar
@@ -18,7 +20,7 @@ export default function Nav() {
 				position="static"
 			>
 				<Logo id="logo" />
-				<div className="navBtns">
+				<div className={showMediaIcons ? 'navBtns mobile-menu-link' : 'navBtns'}>
 					<Link to="/">
 						<Btn variant={'outlined'} title="Home" />
 					</Link>
@@ -38,6 +40,12 @@ export default function Nav() {
 				</div>
 				<div className="navIcons">
 					<ShoppingCartTwoToneIcon style={{ color: '#F57416', height: '3rem' }} />
+				</div>
+				<div className="menu">
+					{/* eslint-disable-next-line jsx-a11y/anchor-is-valid */}
+					<a href="#" onClick={() => setShowMediaIcons(!showMediaIcons)}>
+						<MenuIcon style={{ color: '#F57416', height: '3rem' }} />
+					</a>
 				</div>
 			</AppBar>
 		</div>
