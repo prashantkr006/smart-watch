@@ -26,6 +26,10 @@
 	align-items: center;
 }
 
+.menu {
+	display: none;
+}
+
 .body__container {
 	display: flex;
 	flex-direction: row;
@@ -67,6 +71,17 @@
 	.navBtns {
 		display: none;
 	}
+	.menu {
+		display: grid;
+		grid-column: 5/5;
+	}
+	.mobile-menu-link {
+		display: grid;
+		height: 20rem;
+		background-color: white;
+		top: 12rem;
+		box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -94,6 +109,36 @@
 	.smart_ppl_txt {
 		color: #000000;
 		font-size: 4rem;
+		line-height: 3rem;
+	}
+}
+
+@media screen and (max-width: 400px) {
+	.body__container {
+		display: grid;
+		grid-template-rows: 1fr 1fr;
+		justify-content: center;
+		align-items: center;
+	}
+	.title__container {
+		margin-bottom: 1rem;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+	.pro__txt {
+		color: #177462;
+		font-size: 5rem;
+		line-height: 6rem;
+	}
+	.smart_watches_txt {
+		color: #f57416;
+		font-size: 3rem;
+		line-height: 4rem;
+	}
+	.smart_ppl_txt {
+		color: #000000;
+		font-size: 2rem;
 		line-height: 3rem;
 	}
 }
