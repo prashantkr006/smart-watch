@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/smart-watch/static/css/main.4a1aef99.css",
-    "main.js": "/smart-watch/static/js/main.8a9c161b.js",
+    "main.css": "/smart-watch/static/css/main.2bd6e7b5.css",
+    "main.js": "/smart-watch/static/js/main.70015c68.js",
     "static/js/787.293508d5.chunk.js": "/smart-watch/static/js/787.293508d5.chunk.js",
     "static/media/amico.svg": "/smart-watch/static/media/amico.8ee729eba81e46cb756a611319ae1d4a.svg",
     "index.html": "/smart-watch/index.html",
-    "main.4a1aef99.css.map": "/smart-watch/static/css/main.4a1aef99.css.map",
-    "main.8a9c161b.js.map": "/smart-watch/static/js/main.8a9c161b.js.map",
+    "main.2bd6e7b5.css.map": "/smart-watch/static/css/main.2bd6e7b5.css.map",
+    "main.70015c68.js.map": "/smart-watch/static/js/main.70015c68.js.map",
     "787.293508d5.chunk.js.map": "/smart-watch/static/js/787.293508d5.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.4a1aef99.css",
-    "static/js/main.8a9c161b.js"
+    "static/css/main.2bd6e7b5.css",
+    "static/js/main.70015c68.js"
   ]
 }
